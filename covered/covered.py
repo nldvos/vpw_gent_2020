@@ -30,15 +30,18 @@ if __name__=="__main__":
             hotspots = []
 
             for i in range(n_hotspots):
-                x,y,r = raw_input().split()
+                l = input().split()
+                x = int(l[0])
+                y = int(l[1])
+                r = int(l[2])
                 hotspots.append([int(x), int(y), int(r)])
 
-            X, Y = raw_input().split()
-            X = int(X)
-            Y = int(Y)
+            l = input().split()
+            X = int(l[0])
+            Y = int(l[1])
 
             for x in range(X):
-                line = raw_input()
+                line = input()
                 for y in range(Y):
                     if line[y] == '#':
                         students.append([x, y])
